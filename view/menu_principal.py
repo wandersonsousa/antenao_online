@@ -12,3 +12,13 @@ def menu_formulario_login():
         "senha": senha
     }
 
+def lista_produtos( produtos ):
+    for produto in produtos:
+        print("-*" * 20)
+        print("Nome: " + produto["nome"])
+        print("Preço: " + produto["preco"])
+        print("id: " + str(produto["id"]) )
+    
+def menu_pagina_inicial_loja( produtos ):
+    print("-" * 20)
+    lista_produtos( produtos )
