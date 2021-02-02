@@ -58,7 +58,10 @@ def main():
                     for produto in produtos:
                         if produto['id'] == id:
                             usuario['produtos_comprados'].append( produto )
-                            
+                            print("-" * 20)
+                            print("Carrinho de compras")
+                            print(usuario)
+
                             comprar_novamente = int(input("Para comprar mais digite 1 \nPara sair digite 0 >> "))
 
                             if comprar_novamente == 0:
